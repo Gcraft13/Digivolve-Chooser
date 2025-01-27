@@ -6,6 +6,7 @@
 }
 
 body {
+  display: flex;
   background-image: url("./Images/normal_vpet20thUSA_2vpet_6backgroundscan.jpg");
   background-repeat: no-repeat;
   background-size: cover;
