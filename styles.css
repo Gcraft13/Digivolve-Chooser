@@ -9,7 +9,7 @@ body {
   background-image: url("./Images/normal_vpet20thUSA_2vpet_6backgroundscan.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .title {
