@@ -1,11 +1,24 @@
-let addBtn = document.querySelector(".add");
+const addBtn = document.querySelector(".add");
+const makeDigiBtn = document.querySelector(".makeDigimon");
+const input = document.getElementById("addName");
+const form = document.querySelector("form");
 
-let digivolutions = ["agumon", "gommamon", "izzy", "Emma", "Veronica"];
+let digivolutions = [];
 
-let randomNumber = Math.floor(Math.random() * digivolutions.length);
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  let digiName = input.value;
+  digivolutions.push(digiName);
+  input.value = "";
+  console.log(digivolutions);
+});
 
-let choice = digivolutions[randomNumber];
-
-addBtn.addEventListener("click", function () {
+makeDigiBtn.addEventListener("click", function () {
+  let randomNumber = Math.floor(Math.random() * digivolutions.length);
+  let choice = digivolutions[randomNumber];
   alert(choice);
 });
+
+// makeDigiBtn.addEventListener("click", function () {
+//   alert(choice);
+// });

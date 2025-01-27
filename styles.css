@@ -23,4 +23,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+input,
+button {
+  padding: 5px;
+}
+
+.generate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.generate button {
+  padding: 10px;
+  border-radius: 5px;
 }
